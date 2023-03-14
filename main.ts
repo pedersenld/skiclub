@@ -1,7 +1,10 @@
 input.onButtonPressed(Button.A, function () {
     if (direction == 3) {
         Counter += 1
+        music.playTone(262, music.beat(BeatFraction.Whole))
         direction = randint(1, 3)
+    } else {
+        music.playTone(131, music.beat(BeatFraction.Whole))
     }
     basic.showNumber(Counter)
     basic.pause(50)
@@ -9,7 +12,10 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.AB, function () {
     if (direction == 1) {
         Counter += 1
+        music.playTone(262, music.beat(BeatFraction.Whole))
         direction = randint(1, 3)
+    } else {
+        music.playTone(131, music.beat(BeatFraction.Whole))
     }
     basic.showNumber(Counter)
     basic.pause(50)
@@ -17,7 +23,10 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     if (direction == 2) {
         Counter += 1
+        music.playTone(262, music.beat(BeatFraction.Whole))
         direction = randint(1, 3)
+    } else {
+        music.playTone(131, music.beat(BeatFraction.Whole))
     }
     basic.showNumber(Counter)
     basic.pause(50)
