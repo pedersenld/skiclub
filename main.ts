@@ -4,7 +4,7 @@ input.onButtonPressed(Button.A, function () {
         direction = randint(1, 3)
     }
     basic.showNumber(Counter)
-    basic.pause(200)
+    basic.pause(100)
 })
 input.onButtonPressed(Button.AB, function () {
     if (direction == 1) {
@@ -12,7 +12,7 @@ input.onButtonPressed(Button.AB, function () {
         direction = randint(1, 3)
     }
     basic.showNumber(Counter)
-    basic.pause(200)
+    basic.pause(100)
 })
 input.onButtonPressed(Button.B, function () {
     if (direction == 2) {
@@ -20,7 +20,7 @@ input.onButtonPressed(Button.B, function () {
         direction = randint(1, 3)
     }
     basic.showNumber(Counter)
-    basic.pause(200)
+    basic.pause(100)
 })
 let direction = 0
 let Counter = 0
@@ -36,6 +36,6 @@ basic.forever(function () {
     } else {
     	
     }
-    basic.pause(500)
+    basic.pause(200)
     direction = randint(1, 3)
 })
